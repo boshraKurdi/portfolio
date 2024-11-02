@@ -1,11 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Banner } from './components/Banner';
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-        <Banner />
+      <NavBar />
+      <Banner />
     </div>
   );
 }
