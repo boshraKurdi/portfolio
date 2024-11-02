@@ -1,7 +1,11 @@
 import { Col } from "react-bootstrap";
 import { Github } from "react-bootstrap-icons";
 import { ArrowUpRightCircle } from "react-bootstrap-icons";
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl , linkGithub , linkOpen }) => {
+  const handleOpenNewTab = (event , link) => {
+    event.preventDefault();
+    window.open(`https://${link}`, '_blank');
+};
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -10,8 +14,8 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           <div className="icon">
-            <div className="i"><Github /></div>
-            <div className="i"><ArrowUpRightCircle /></div>
+            <div onClick={(event)=>{handleOpenNewTab(event , linkGithub)}} className="i"><Github /></div>
+            <div onClick={(event)=>{handleOpenNewTab(event , linkOpen)}} className="i"><ArrowUpRightCircle /></div>
           </div>
         </div>
       </div>
