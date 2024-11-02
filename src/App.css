@@ -52,6 +52,10 @@
     position: relative;
     margin-top: 0;
     padding: 11rem 0 100px 0;
+    background-image: url('./assets/img/427159.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .banner::before{
     content: "";
