@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import colorSharp from "../assets/img/color-sharp.png";
 import Cycle from "./Cycle";
 import Progress from "./Progress";
 import { motion } from "framer-motion"
@@ -141,6 +142,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+      <img className="background-image-left" src={colorSharp} alt="Img" />
     </section>
   );
 };
