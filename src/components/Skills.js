@@ -36,8 +36,8 @@ export const Skills = () => {
               style={{ marginBottom: "5rem" }}
               className="skill-bx wow zoomIn"
             >
-              <motion.h2 variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Technical Skills</motion.h2>
-              <motion.p variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Technical Skills</motion.h2>
+              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
@@ -93,8 +93,8 @@ export const Skills = () => {
               style={{ marginBottom: "5rem" }}
               className="skill-bx wow zoomIn"
             >
-              <motion.h2 variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Professional Skills</motion.h2>
-              <motion.p variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Professional Skills</motion.h2>
+              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
@@ -128,8 +128,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <motion.h2 variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Languages</motion.h2>
-              <motion.p variants={fadeIn('down' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Languages</motion.h2>
+              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.

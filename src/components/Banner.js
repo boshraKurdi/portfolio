@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle , Envelope } from 'react-bootstrap-icons';
 import headerImg from "../assets/file/banner.json";
 import Lottie from "lottie-react";
-
+import { motion } from "framer-motion"
+import {fadeIn} from './Variarts'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,17 +53,17 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-              <div >
+              <motion.div variants={fadeIn('right' , 0.2)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
                 <span className="tagline" style={{display:'flex' , alignItems: 'center' , width:'fit-content'}}><Envelope style={{fontSize:'1.5rem' , marginRight: '.5rem'}}/>thboshra624@gmail.com</span>
                 <h1>{`Hi! I'm Boshra`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>
+              </motion.div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-                <div>
+                <motion.div variants={fadeIn('left' , 0.2)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
                   <Lottie animationData={headerImg} />
-                </div>
+                </motion.div>
           </Col>
         </Row>
       </Container>
