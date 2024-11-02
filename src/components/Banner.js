@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle , Envelope } from 'react-bootstrap-icons';
+import headerImg from "../assets/file/banner.json";
+import Lottie from "lottie-react";
 
 
 export const Banner = () => {
@@ -59,7 +61,7 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
                 <div>
-                  img
+                  <Lottie animationData={headerImg} />
                 </div>
           </Col>
         </Row>
