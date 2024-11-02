@@ -60,8 +60,8 @@ export const Banner = () => {
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </motion.div>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-                <motion.div variants={fadeIn('left' , 0.2)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+          <Col xs={12} md={6} xl={5} className="d-none d-md-block">
+                <motion.div variants={fadeIn('left' , 0.2)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="bannerImg">
                   <Lottie animationData={headerImg} />
                 </motion.div>
           </Col>

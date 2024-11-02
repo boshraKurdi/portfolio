@@ -2,7 +2,6 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import todolist from '../assets/img/todolist.png'
 import Fitness from '../assets/img/fitness.png'
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import { motion } from "framer-motion"
 import {fadeIn} from './Variarts'
 
@@ -72,7 +71,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="img"></img>
     </section>
   )
 }

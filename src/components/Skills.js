@@ -3,8 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import Cycle from "./Cycle";
 import Progress from "./Progress";
-import { motion } from "framer-motion"
-import {fadeIn} from './Variarts'
+
 
 export const Skills = () => {
   const responsive = {
@@ -36,12 +35,12 @@ export const Skills = () => {
               style={{ marginBottom: "5rem" }}
               className="skill-bx wow zoomIn"
             >
-              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Technical Skills</motion.h2>
-              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <h2 >Technical Skills</h2>
+              <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
-              </motion.p>
+              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -93,12 +92,12 @@ export const Skills = () => {
               style={{ marginBottom: "5rem" }}
               className="skill-bx wow zoomIn"
             >
-              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Professional Skills</motion.h2>
-              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <h2>Professional Skills</h2>
+              <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
-              </motion.p>
+              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -128,12 +127,12 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <motion.h2 variants={fadeIn('left' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Languages</motion.h2>
-              <motion.p variants={fadeIn('right' , 0.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>
+              <h2 >Languages</h2>
+              <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
-              </motion.p>
+              </p>
 
               <Progress title='Arabic' hand='100' />
 
