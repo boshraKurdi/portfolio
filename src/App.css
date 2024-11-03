@@ -48,6 +48,9 @@
   input:focus, textarea:focus, select:focus {
     outline: none;
   }
+  #root{
+    overflow-x: hidden;
+  }
   /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -341,8 +344,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #2d3239;
   border: 1px solid #555;
   border-radius: 50%;
-  width: 12.2em;
-  height: 12.2em;
+  width: 11.2em;
+  height: 11.2em;
   color: #fff;
   left: 50%;
   transform: translateX(-50%);
@@ -358,8 +361,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 9em;
-  height: 9em;
+  width: 8em;
+  height: 8em;
   border-radius: 50%;
   box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.7);
   display: flex;
@@ -375,8 +378,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
-  width: 8.5em;
-  height: 8.5em;
+  width: 7.5em;
+  height: 7.5em;
   z-index: -1;
 }
 .item h5{
@@ -385,6 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .inner h1{
   font-size: 2.6em;
+  margin: 0;
 }
 .prog-line span{
   transform-origin: left;
@@ -416,6 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 .skill p {
     color: #B8B8B8;
@@ -452,6 +457,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 .project p {
   color: #B8B8B8;
@@ -661,4 +667,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.react-multiple-carousel__arrow--right{
+  right: 0 !important;
+}
+.react-multiple-carousel__arrow--left{
+  left: 0 !important;
 }

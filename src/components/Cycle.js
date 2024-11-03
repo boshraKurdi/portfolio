@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function Cycle({num}) {
-    const dash = 85 * Math.PI * 2;
+    const dash = 77 * Math.PI * 2;
     const targetOffset = dash - (dash * num) / 100;
     const [offset, setOffset] = useState(dash); // ابدأ من القيمة القصوى
     const cycleRef = useRef(null); // مرجع للعنصر لمراقبته
@@ -37,14 +37,14 @@ export default function Cycle({num}) {
                 <circle
                     cx="125"
                     cy="125"
-                    r="85"
+                    r="77"
                     strokeWidth="19px"
                     className="cycle-bg"
                 ></circle>
                 <circle
                     cx="125"
                     cy="125"
-                    r="85"
+                    r="77"
                     strokeWidth="19px"
                     style={{
                         strokeDasharray: dash,
