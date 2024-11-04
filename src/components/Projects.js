@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import todolist from '../assets/img/todolist.png'
+import Chats from '../assets/img/chats.png'
 import Fitness from '../assets/img/fitness.png'
 import { motion } from "framer-motion"
 import {fadeIn} from './Variarts'
@@ -21,6 +22,13 @@ export const Projects = () => {
       imgUrl: Fitness,
       linkGithub: 'github.com/boshraKurdi/fitness' ,
       linkOpen: 'boshraKurdi.github.io/fitness'
+    },
+    {
+      title: "Chats",
+      description: "React & json server",
+      imgUrl: Chats,
+      linkGithub: 'github.com/boshraKurdi/chats' ,
+      linkOpen: 'boshraKurdi.github.io/chats'
     },
   ];
 
@@ -45,7 +53,7 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row style={{justifyContent: 'center'}}>
                         {
                           projects.map((project, index) => {
                             return (

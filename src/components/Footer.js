@@ -20,7 +20,7 @@ export const Footer = () => {
                 <a href="https://github.com/boshraKurdi/" onClick={(event)=>{handleOpenNewTab(event ,'/github.com/boshraKurdi/')}}><Github  /></a>
                 <a href="https://github.com/boshraKurdi/" onClick={(event)=>{handleOpenNewTab(event ,'')}}><Telegram  /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2024. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

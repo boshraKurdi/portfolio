@@ -7,7 +7,7 @@ export const ProjectCard = ({ title, description, imgUrl , linkGithub , linkOpen
     window.open(`https://${link}`, '_blank');
 };
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={8} md={6} xl={4}>
       <div className="proj-imgbx">
         <img src={imgUrl} alt="img" />
         <div className="proj-txtx">
