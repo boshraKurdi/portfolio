@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.a2eddf3a.css",
-    "main.js": "/test/static/js/main.2c1fcbab.js",
+    "main.css": "/test/static/css/main.3a4ff7a3.css",
+    "main.js": "/test/static/js/main.a61d85ab.js",
     "static/js/453.63c4db86.chunk.js": "/test/static/js/453.63c4db86.chunk.js",
     "static/media/color-sharp.png": "/test/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/chats.png": "/test/static/media/chats.c5b890e855aa25713042.png",
     "static/media/fitness.png": "/test/static/media/fitness.a06ef38db7f10c76fbd8.png",
+    "static/media/weather.png": "/test/static/media/weather.5fa65a5102d6ea4b625a.png",
     "static/media/427159.jpg": "/test/static/media/427159.8edc56e3d1301052ed86.jpg",
     "static/media/footer-bg.png": "/test/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/todolist.png": "/test/static/media/todolist.6032c1447251c75a2344.png",
@@ -13,12 +14,12 @@
     "static/media/revicons.ttf": "/test/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/test/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/test/index.html",
-    "main.a2eddf3a.css.map": "/test/static/css/main.a2eddf3a.css.map",
-    "main.2c1fcbab.js.map": "/test/static/js/main.2c1fcbab.js.map",
+    "main.3a4ff7a3.css.map": "/test/static/css/main.3a4ff7a3.css.map",
+    "main.a61d85ab.js.map": "/test/static/js/main.a61d85ab.js.map",
     "453.63c4db86.chunk.js.map": "/test/static/js/453.63c4db86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2eddf3a.css",
-    "static/js/main.2c1fcbab.js"
+    "static/css/main.3a4ff7a3.css",
+    "static/js/main.a61d85ab.js"
   ]
 }
