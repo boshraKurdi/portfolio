@@ -307,8 +307,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .ex-item{
- width: 100%;
- margin: 2.5rem 0 0 0 ;
+  width: 80%;
+  margin: 2.5rem auto;
   
 }
 .ex-info{
@@ -414,7 +414,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 5px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -673,4 +673,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .react-multiple-carousel__arrow--left{
   left: 0 !important;
+}
+@media(max-width: 787px){
+  h2 {
+    font-size: 2rem !important;
+  }
+  .inner h1 {
+    font-size: 2em;
+    }
 }

@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import todolist from '../assets/img/todolist.png'
 import Chats from '../assets/img/chats.png'
+import Weather from '../assets/img/weather.png'
 import Fitness from '../assets/img/fitness.png'
 import { motion } from "framer-motion"
 import {fadeIn} from './Variarts'
@@ -25,10 +26,17 @@ export const Projects = () => {
     },
     {
       title: "Chats",
-      description: "React & json server",
+      description: "React & Api",
       imgUrl: Chats,
       linkGithub: 'github.com/boshraKurdi/chats' ,
       linkOpen: 'boshraKurdi.github.io/chats'
+    },
+    {
+      title: "Weather",
+      description: "React & Api",
+      imgUrl: Weather,
+      linkGithub: 'github.com/boshraKurdi/weather' ,
+      linkOpen: 'boshraKurdi.github.io/weather'
     },
   ];
 
