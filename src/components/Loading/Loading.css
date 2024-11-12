@@ -1,0 +1,63 @@
+/* From Uiverse.io by SouravBandyopadhyay */
+.loading{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0)
+} 
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button.dark{
+  --text-stroke-color: rgba(255,255,255,0.6);
+  
+}
+.button.light{
+  --text-stroke-color: rgba(0,0,0,0.6);
+}
+.button {
+  /* linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+  --border-right: 6px;
+  --animation-color: #4A2FBD;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  filter: drop-shadow(0 0 17px var(--animation-color));
+  -webkit-text-stroke: 1px var(--animation-color);
+  animation: move 1s linear infinite;
+}
+
+@keyframes move{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 100%;
+  }
+}

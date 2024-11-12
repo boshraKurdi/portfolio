@@ -1,19 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Banner } from './components/Banner';
-import { NavBar } from './components/NavBar';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-import { Footer } from './components/Footer';
+import AppRouter from './routes/AppRouter';
+import { useContext } from 'react';
+import { Store } from './context/context';
 
 function App() {
+  const { mode } = useContext(Store)
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Footer />
+    <div className={`App ${mode}`}>
+      <AppRouter />
     </div>
   );
 }

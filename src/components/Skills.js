@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import {fadeIn} from './Variarts'
 
 
-export const Skills = () => {
+export const Skills = ({ mode }) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -29,7 +29,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className={`skill ${mode}`} id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -58,6 +58,10 @@ export const Skills = () => {
                 <div className="item">
                   <Cycle num="85" />
                   <h5>JavaScript</h5>
+                </div>
+                <div className="item">
+                  <Cycle num="75" />
+                  <h5>TypeScript</h5>
                 </div>
                 <div className="item">
                   <Cycle num="80" />
@@ -95,6 +99,14 @@ export const Skills = () => {
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
+                <div className="item">
+                  <Cycle num="95" />
+                  <h5>Frond End Development</h5>
+                </div>
+                <div className="item">
+                  <Cycle num="90" />
+                  <h5>Back End Development</h5>
+                </div>
                 <div className="item">
                   <Cycle num="100" />
                   <h5>Team Work</h5>

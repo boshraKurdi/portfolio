@@ -4,10 +4,11 @@ import todolist from '../assets/img/todolist.png'
 import Chats from '../assets/img/chats.png'
 import Weather from '../assets/img/weather.png'
 import Fitness from '../assets/img/fitness.png'
+import Demo from '../assets/img/demo.png'
 import { motion } from "framer-motion"
 import {fadeIn} from './Variarts'
 
-export const Projects = () => {
+export const Projects = ({ mode }) => {
 
   const projects = [
     {
@@ -38,10 +39,17 @@ export const Projects = () => {
       linkGithub: 'github.com/boshraKurdi/weather' ,
       linkOpen: 'boshraKurdi.github.io/weather'
     },
+    {
+      title: "Demo",
+      description: "React Material Ui",
+      imgUrl: Demo,
+      linkGithub: 'github.com/boshraKurdi/demo' ,
+      linkOpen: 'boshraKurdi.github.io/demo'
+    },
   ];
 
   return (
-    <section className="project" id="projects">
+    <section className={`project ${mode}`} id="projects">
       <Container>
         <Row>
           <Col size={12}>
