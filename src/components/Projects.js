@@ -15,8 +15,8 @@ export const Projects = ({ mode }) => {
       title: "TodoList",
       description: "Front End React",
       imgUrl: todolist,
-      linkGithub: 'github.com/boshraKurdi/list' ,
-      linkOpen: 'boshraKurdi.github.io/list'
+      linkGithub: 'github.com/boshraKurdi/todolist' ,
+      linkOpen: 'boshraKurdi.github.io/todolist'
     },
     {
       title: "Fitness",
