@@ -54,7 +54,7 @@ export const Banner = ({mode}) => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
               <div>
-                <motion.span variants={fadeIn('' , 0.5)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="tagline" style={{display:'flex' , alignItems: 'center' , width:'fit-content'}}><Envelope style={{fontSize:'1.5rem' , marginRight: '.5rem'}}/>thboshra624@gmail.com</motion.span>
+                <motion.span variants={fadeIn('' , 0.5)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="tagline" style={{display:'flex' , alignItems: 'center' , width:'fit-content'}}><Envelope style={{fontSize:'1.5rem' , marginRight: '.5rem'}}/>tkboshra624@gmail.com</motion.span>
                 <motion.h1 variants={fadeIn('' , 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>{`Hi! I'm Boshra And I'm`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></motion.h1>
                   <motion.p variants={fadeIn('' , 0.9)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}}>Specialize in designing and developing modern websites, web applications , My work lies in achieving excellence as a professional web developer.</motion.p>
                   <motion.button variants={fadeIn('' , 1.1)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></motion.button>
