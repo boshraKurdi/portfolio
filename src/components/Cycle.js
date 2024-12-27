@@ -3,27 +3,25 @@ import { useEffect, useRef, useState } from "react";
 export default function Cycle({num}) {
     const dash = 69 * Math.PI * 2;
     const targetOffset = dash - (dash * num) / 100;
-    const [offset, setOffset] = useState(dash); // ابدأ من القيمة القصوى
-    const cycleRef = useRef(null); // مرجع للعنصر لمراقبته
+    const [offset, setOffset] = useState(dash); 
+    const cycleRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
-                // تحقق إذا كان العنصر مرئيًا
                 if (entries[0].isIntersecting) {
-                    setOffset(targetOffset); // ابدأ التحريك عندما يصبح العنصر مرئيًا
+                    setOffset(targetOffset); 
                 }else{
                     setOffset(dash)
                 }
             },
-            { threshold: 0.5 } // 50% من العنصر يجب أن يكون ظاهرًا
+            { threshold: 0.5 }
         );
 
         if (cycleRef.current) {
             observer.observe(cycleRef.current);
         }
 
-        // تنظيف المراقب عند إزالة المكون
         return () => {
             if (cycleRef.current) {
                 observer.unobserve(cycleRef.current);
