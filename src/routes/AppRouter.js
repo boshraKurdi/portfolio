@@ -6,12 +6,8 @@ const Home = lazy(()=> import('../pages/Home'));
 const router = createBrowserRouter([
 
   {
-    path: '/test',
+    path: '/portfolio',
     element:  <Suspense fallback={<Loading />}><Home/></Suspense>,
-  },
-  {
-    path: '/test/loading',
-    element:  <Loading/>,
   },
 ]);
 export default function AppRouter() {
