@@ -1,15 +1,14 @@
 // ProjectVideo.js
 import React, { useState } from "react";
 import { Col, Row, Container, Modal, Button } from "react-bootstrap";
-import { Github } from "react-bootstrap-icons";
+import { ArrowUpRightCircle, Github } from "react-bootstrap-icons";
 import Imag1 from '../assets/img/cody.jpg'
-import Video1 from '../assets/file/cody.mp4'
 const projects = [
   {
     title: "cody",
     description: "Organize projects into Features and Pages, and Code Snippets Save and archive and categorize AI-generated code for future use Rearrange and manage code components for quick editing and copy-paste ,Upload, classify, and continue working on your projects at any time",
     imgUrl: Imag1,
-    videoUrl: Video1,
+    videoUrl:"https://drive.google.com/file/d/1foj6CLuQFb-Gr0qRNU5BraEiaLQ7JZXA/view?usp=sharing",
     tools: [
 
     "Back-End" ,
@@ -58,15 +57,8 @@ const ProjectVideo = ({mode}) => {
             <Modal.Title>{selectedProject.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className="video-container">
-              <iframe
-                width="100%"
-                height="315"
-                src={selectedProject.videoUrl}
-                title="Project Video"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
+            <div style={{padding:"0"}} className="video-container">
+            <img src={selectedProject.imgUrl} alt={selectedProject.title} />
             </div>
             <p>{selectedProject.description}</p>
             <h6>Tools:</h6>
@@ -83,12 +75,12 @@ const ProjectVideo = ({mode}) => {
             >
               <Github /> code project 
             </Button>
-            {/* <Button
+            <Button
               variant="primary"
-              onClick={() => window.open(`https://${selectedProject.linkOpen}`, "_blank")}
+              onClick={() => window.open(`${selectedProject.videoUrl}`, "_blank")}
             >
-              <ArrowUpRightCircle /> عرض المشروع
-            </Button> */}
+              <ArrowUpRightCircle /> open video 
+            </Button>
           </Modal.Footer>
         </Modal>
       )}
