@@ -60,10 +60,6 @@ export const Skills = ({ mode }) => {
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <Cycle num="75" />
-                  <h5>TypeScript</h5>
-                </div>
-                <div className="item">
                   <Cycle num="80" />
                   <h5>Bootstrap</h5>
                 </div>

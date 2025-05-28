@@ -66,7 +66,7 @@ export const NavBar = ({ mode , setMode }) => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <motion.a variants={fadeIn('down' , 0.6)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="a" href="https://www.linkedin.com/in/boshra-kurdi-0637452a0" onClick={(event)=>{handleOpenNewTab(event ,'linkedin.com/in/boshrakurdi-0637452a0/')}}><Linkedin /></motion.a>
+                <motion.a variants={fadeIn('down' , 0.6)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="a" href="https://www.linkedin.com/in/boshra-kurdi-0637452a0" onClick={(event)=>{handleOpenNewTab(event ,'www.linkedin.com/in/boshra-kurdi-0637452a0')}}><Linkedin /></motion.a>
                 <motion.a variants={fadeIn('down' , 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="a" href="https://github.com/boshraKurdi/" onClick={(event)=>{handleOpenNewTab(event ,'/github.com/boshraKurdi/')}}><Github  /></motion.a>
                 <motion.div variants={fadeIn('down' , 0.8)} initial="hidden" whileInView={'show'} viewport={{once: false ,amount: 0.7}} className="a" href="index" onClick={()=>{HandelMode()}}>{mode === 'light' ? <Sun  /> : <MoonStars />}</motion.div>
               </div>
